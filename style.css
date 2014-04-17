@@ -18,6 +18,14 @@ body, html {
 body {
 }
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -43,6 +51,14 @@ img.full,
 img.post-image {
   width: 100%;
   height: auto;
+}
+
+hr {
+  border-top: 1px solid #e2e2e2;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  margin: 10px 0 30px 0;
 }
 
 .container {
@@ -288,7 +304,7 @@ input.email {
   border: 1px solid #ababa9;
   border-radius: 2px;
   padding: 10px;
-  line-height: 35px;
+  height: 57px;
 }
 
 .button {
@@ -298,6 +314,7 @@ input.email {
   margin: 10px auto 0px auto;
   font-weight: 500;
   border: 0px;
+  height: 57px;
 }
 
 .button.white {
@@ -390,4 +407,19 @@ input.email {
 
 .center-text {
   text-align: center;
+}
+
+.share {
+  text-align: center;
+}
+
+.share h4 {
+  margin-bottom: 10px;
+}
+
+.share a {
+  background-color: #f2f2f1;
+  margin: 0px 4px;
+  padding: 5px 8px;
+  border-radius: 2px;
 }
